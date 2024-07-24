@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/logo" />
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RTSP Streamer"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- RTSP URL Input -->
+    <EditText
+        android:id="@+id/etRtspUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/black"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="4dp"
+        android:hint="Enter RTSP URL"
+        android:inputType="textUri"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#B0B0B0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- PlayerView for video display -->
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/black"
+        android:visibility="gone"
+        android:elevation="8dp" />
+
+    <!-- ProgressBar to show loading state -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:indeterminateTint="#FF6F00" />
+
+    <!-- Control Buttons -->
+    <Button
+        android:id="@+id/btnStartStream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#1E364C"
+        android:elevation="4dp"
+        android:text="Start Streaming"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnPauseStream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#1E364C"
+        android:elevation="4dp"
+        android:text="Pause Streaming"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnStopStream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#1E364C"
+        android:elevation="4dp"
+        android:text="Stop Streaming"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

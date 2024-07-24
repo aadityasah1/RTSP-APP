@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stream</string>
+    <string name="resume_streaming">\n\n</string>
+    <string name="pause_streaming" />
+    <string name="no_network" />
+    <string name="error_message" />
+</resources>

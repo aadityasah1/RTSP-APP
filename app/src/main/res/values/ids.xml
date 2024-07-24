@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnStopStream" type="id" />
+    <item name="btnPauseStream" type="id" />
+    <item name="btnStartStream" type="id" />
+    <item name="etRtspUrl" type="id" />
+    <item name="playerView" type="id" />
+</resources>
